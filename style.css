@@ -1,0 +1,430 @@
+body{
+ margin: 0;
+ font-family: 'Lora', sans-serif;
+ font-weight: 1.125rem;
+ font-weight: 300;
+
+
+}
+
+img{
+ max-width: 90%;
+ display: block;
+}
+
+/*===========================
+Typography
+=============================
+*/
+
+
+h1{
+ font-size:2rem;
+ margin: 0em;
+ font-family: "Niconne", serif;
+ color: #0c59cf;
+ font-weight: 900;
+
+}
+
+.article-title{
+ font-weight: bold;
+ color: #0c59cf;
+ font-size: 1.5rem;
+}
+
+.article-read-more{
+ background: #0c59cf;
+ color: white;
+ font-weight: bold;
+ text-decoration: none;
+ font-size: .875rem;
+border-radius: 10px;
+padding: 5px 0;
+display: inline;
+
+border-collapse: separate;
+
+
+ 
+
+}
+
+.article-second{
+ background: #0c59cf;
+}
+
+
+
+.article-read-more:hover{
+ background: black;
+ color: white;
+}
+
+.article-read-more:focus{
+ color: #093270;
+}
+
+.site-title{
+ position: relative;
+ bottom: 0.7em;
+}
+
+
+
+
+
+/*===========================
+Layout
+=============================
+*/
+
+header{
+ padding: 2em 0;
+ text-align: center;
+
+ margin-bottom: 0em;
+ background: #fec63d;
+ opacity: 0.95;
+}
+
+.container{
+ width: 90%;
+ max-width: 100%;
+ margin: 0 auto;
+ 
+ 
+}
+
+.container2{
+ width: 100%;
+ max-width: 100%;
+ margin: 0 auto;
+}
+
+.container3{
+
+ width:100%;
+ max-width: 100%;
+ background: #fec63d;
+
+
+}
+
+
+.container-flex, .container-flex2, .containerflex-3 {
+ display:flex;
+ justify-content: space-between;
+ flex-direction: column;
+ 
+
+}
+
+.site-title h1{
+ font-size: 32px;
+}
+
+@media (min-width: 900px) {
+ .container-flex, .container-flex2, .container-flex3 {
+  flex-direction: row;
+ }
+
+ main {
+  width: 90%;
+ }
+}
+
+
+
+
+
+
+/*===========================
+navigation
+=============================
+*/
+
+nav ul{
+ list-style: none;
+ padding: 0;
+ display: flex;
+ justify-content: center;
+
+ 
+}
+
+nav li{
+margin-right: 1em;
+ font-size: 0.84rem;
+ 
+}
+
+nav a{
+ text-decoration: none;
+ color: black;
+ font-weight: 700;
+ padding: .25em 0;
+
+}
+
+nav a:hover,
+nav a:focus {
+ color:#0947a4;
+}
+/* if the device length is less than 800px or equal to 800px then all the styles gets applied*/
+@media (max-width:900px){
+ nav ul{
+  flex-direction: column ;
+
+
+ }
+ nav li{
+  margin: 1.3em 0;
+ }
+ 
+
+ 
+}
+
+.current-page{
+ border-right: 2px solid white;
+padding: 1em;
+}
+
+/*===========================
+Articles
+=============================
+*/
+
+.first-article-image{
+ height: 500px;
+ margin-top: 5.0em;
+ object-fit: cover;
+ min-width: 100%;
+
+}
+
+.article-first, .article-second, .article-third{
+ padding-bottom: 2em;
+
+ display: flex;
+ flex-direction: column;
+width: 100%;
+height: auto;
+ 
+
+ 
+
+}
+
+
+
+
+
+
+.article-header{
+ text-align: center;
+ color: white;
+ margin-top: 1.3em;
+ 
+}
+
+.about-us-title{
+ text-align: center;
+}
+
+.article-recent-main{
+ 
+}
+/* if the device length is greater than 800px or equal to 800px then all the styles gets applied*/
+@media (min-width:900px){
+ .article-first{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+ 
+ 
+ }
+
+ .article-image-secondary{
+ width: 100%;
+  margin-left: 2em;
+
+ }
+
+ .article-recent-main{
+  width: 100%;
+  margin-top: 8em;
+
+ }
+
+
+ nav li{
+  padding-right: 2px;
+   position: relative;
+   left: 1.87em;
+  font-size: 0.84rem;
+
+ 
+ 
+ }
+
+
+ 
+
+
+}
+
+
+/*===========================
+Cards
+=============================
+*/
+
+.article-products{
+ margin: 0 auto;
+  height: 500px;
+   display: flex;
+   flex-direction: column;
+
+}
+ .card{
+  max-width: 90%;
+
+  padding: 15px;
+  border-collapse: separate;
+  
+  margin-top: 1.3em;
+ border-radius: 45px;
+ height: 350px;
+
+ }
+
+ .card-title, .item-price{
+  border: 2px solid black;
+  padding: 1px ;
+  background: #b3b3b3;
+  color: black;
+ 
+ 
+ }
+ .card-body{
+  text-align: center;
+ }
+
+ .item-link{
+  text-decoration: none;
+ }
+ 
+
+
+ .card-img-top{
+  width: 90%;
+  padding: 20px;
+
+ 
+ }
+
+ .card-img-special{
+  height: 170px;
+  object-fit: cover;
+ }
+@media (min-width:900px){
+ .article-products{
+  display: flex;
+ 
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ .card{
+margin: 0 auto;
+
+ }
+
+}
+/* if the device length is less than 800px or equal to 800px then all the styles gets applied*/
+@media (max-width:900px){
+ .article-products{
+  height: auto;
+
+ }
+
+ .card{
+ 
+
+ }
+}
+
+/*===========================
+About Us
+=============================
+*/
+
+.about-us-img{
+  height: 400px;
+
+   margin-bottom: 3em;
+   object-fit: cover;
+   min-width: 90%;
+   margin-right: 6em;
+}
+
+.mission-header{
+ width: 90%;
+ height: 0;
+ margin: 0 auto;
+ color: #0c59cf;
+ font-weight: bolder;
+ margin-top: 3.5em;
+}
+
+.article-third{
+ padding: 60px;
+
+ 
+}
+.about-us-text{
+margin-top: 1.3em;
+ width: 100%;
+ padding: 60px;
+
+}
+
+@media (min-width:900px){
+
+ .About-Us{
+   display: flex;
+ 
+    flex-direction: row;
+    justify-content: space-between;
+   }
+ 
+ .about-us-img{
+  min-width: 35% ;
+ }
+    .about-us-text {
+    
+     width: 100%;
+     
+    }
+
+} 
+
+
+@media (max-width:900px){
+ .about-us-text{
+  margin-top: 1.3em;
+  width: 100%;
+
+ }
+
+ .article-third{
+  height: auto;
+
+ }
+ .mission-header{
+  margin-left: 2em;
+ }
+}
+ 
