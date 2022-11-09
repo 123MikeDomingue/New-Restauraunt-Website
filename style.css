@@ -362,6 +362,10 @@ About Us
 */
 
 .about-us-img{
+ height: 350px;
+}
+
+/* .about-us-img{
   height: 400px;
 
    margin-bottom: 3em;
@@ -386,8 +390,9 @@ About Us
 }
 .about-us-text{
 margin-top: 1.3em;
- width: 100%;
+width: 100;
  padding: 60px;
+
 
 }
 
@@ -398,6 +403,7 @@ margin-top: 1.3em;
  
     flex-direction: row;
     justify-content: space-between;
+  
    }
  
  .about-us-img{
@@ -416,6 +422,7 @@ margin-top: 1.3em;
  .about-us-text{
   margin-top: 1.3em;
   width: 100%;
+  
 
  }
 
@@ -427,4 +434,8 @@ margin-top: 1.3em;
   margin-left: 2em;
  }
 }
- 
+  */
+/*===========================
+services
+=============================
+*/
